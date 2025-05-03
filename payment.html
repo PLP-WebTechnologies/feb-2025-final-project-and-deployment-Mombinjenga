@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - SerenitySpace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Payment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="payment-section">
+            <h2>Complete Your Payment</h2>
+            <form action="https://www.example.com/process-payment" method="POST" class="payment-form">
+                <!-- Credit Card Payment -->
+                <div class="payment-method">
+                    <h3>Pay with Credit Card</h3>
+                    <label for="card-name">Name on Card:</label>
+                    <input type="text" id="card-name" name="card-name" required>
+                    
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                    
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                    
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+
+                <!-- PayPal Payment -->
+                <div class="payment-method">
+                    <h3>Pay with PayPal</h3>
+                    <p>Click the button below to pay with PayPal:</p>
+                    <a href="https://www.paypal.com/paypalme/example" class="btn">Pay with PayPal</a>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-payment">
+                    <button type="submit" class="btn">Submit Payment</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 SerenitySpace | Your Path to Peace</p>
+    </footer>
+</body>
+</html>

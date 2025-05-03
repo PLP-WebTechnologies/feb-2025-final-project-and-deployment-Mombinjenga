@@ -1,0 +1,485 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f9fc; /* Light calming background */
+    color: #333; /* Neutral text color */
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background: #a8d5e2; /* Soft blue for a calming effect */
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f7f9fc; /* Light hover effect */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem; /* Add spacing below the hero section */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Limit the height of the image */
+    object-fit: cover; /* Ensure the image scales properly */
+    filter: brightness(60%); /* Darken image for text contrast */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Stronger shadow for better visibility */
+    padding: 1rem; /* Add padding around the text */
+    box-sizing: border-box;
+    width: 90%; /* Ensure the text doesn't overflow */
+    max-width: 800px; /* Limit the width of the text */
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background: #87c0d4;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #5fa9b8; /* Slightly darker shade for hover */
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #ffffff; /* White background for contrast */
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.feature {
+    display: inline-block;
+    width: 45%;
+    margin: 1rem;
+    text-align: center;
+    background: #f7f9fc; /* Light background for feature blocks */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem;
+}
+
+.feature-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #87c0d4;
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #a8d5e2; /* Match header color */
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-top: 2px solid #f7f9fc; /* Subtle separation */
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Blog Section */
+.blog {
+    padding: 2rem 1rem;
+    background: #f7f9fc;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.blog-post {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.blog-summary {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.blog-content {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.read-more {
+    background: #87c0d4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.read-more:hover {
+    background: #5fa9b8;
+}
+
+/* Premier Services Section */
+.premier-services {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #ffffff; /* White background for contrast */
+}
+
+.premier-services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    text-align: center;
+    background: #f7f9fc; /* Light background for service blocks */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 1rem;
+}
+
+.service-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Payment Button */
+.payment {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.payment .btn {
+    background: #87c0d4;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.payment .btn:hover {
+    background: #5fa9b8; /* Slightly darker shade for hover */
+}
+
+/* Payment Section */
+.payment-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f7f9fc;
+}
+
+.payment-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.payment-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method {
+    margin-bottom: 2rem;
+}
+
+.payment-method h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.payment-method label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.payment-method input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-payment {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.submit-payment .btn {
+    background: #87c0d4;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.submit-payment .btn:hover {
+    background: #5fa9b8;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f7f9fc;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #87c0d4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #5fa9b8;
+}
+
+/* Contact Details Section */
+.contact-details {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #ffffff;
+}
+
+.contact-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* About Page Sections */
+.mission, .vision, .our-story, .core-values {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f7f9fc;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2, .vision h2, .our-story h2, .core-values h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.mission p, .vision p, .our-story p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.core-values ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.core-values li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.core-values li strong {
+    color: #333;
+}
